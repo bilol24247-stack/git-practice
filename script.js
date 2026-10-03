@@ -215,7 +215,7 @@ cart.forEach((item, index) => {
 const totalSum = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 message += `\n💰 *Jami:* ${totalSum.toLocaleString()} so'm`;
 
-const telegramUsername = "Vccc221";
+const telegramUsername = "Bilol_2427";
 
 const encodedMessage = encodeURIComponent(message);
 const telegramUrl = `https://t.me/${telegramUsername}?text=${encodedMessage}`;
