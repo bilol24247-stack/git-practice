@@ -1,6 +1,6 @@
 const menuData = [
     {
-        id:1,
+        id: 1,
         name: "Chizburger XL",
         category: "burgers",
         price: 35000,
@@ -8,7 +8,7 @@ const menuData = [
         desc: "Yumshoq bulochka, shirador mol go'shti kotleti, erigan cheddar pishlog'i, yangi sabzavotlar va FastBite sousidan tayyorlangan klassik, to'yimli burger"
     },
     {
-        id:2,
+        id: 2,
         name: "Double Burger",
         category: "burgers",
         price: 40000,
@@ -16,55 +16,98 @@ const menuData = [
         desc: "Yumshoq bulochka, ikki qavat sersuv mol go'shti kotleti, ikki baravar erigan cheddar pishlog'i, yangi sabzavotlar va FastBite sousidan tayyorlangan o'ta to'yimli va ulkan burger"
     },
 
+       {
+        id: 3,
+        name: "chiken burger",
+        category: "burgers",
+        price: 30000,
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDGsW4DHN1VaURDxLe-maWYBRp8UJxAPpDNIvf06IkRg&s=10",
+        desc: "Chicken Burger 🍔 — yumshoq bulochka, shirali tovuq go‘shti, yangi sabzavotlar va mazali souslardan tayyorlanadigan fast-food. Qarsildoq tovuq go‘shti va ajoyib ta’mi bilan barchaga yoqadi! 😋"
+    },
+
     {
-        id:3,
+        id: 4,
         name: "fri",
         category: "sides",
         price: 15000,
         image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=725&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        desc:"Qarsildoq va tillarang kartoshka bo‘laklari, tashqarisi mayin qovurilgan, ichi esa yumshoq va mazali — maxsus ziravorlar bilan ta’m berilgan, har qanday burgerga ajoyib hamroh bo‘ladigan ishtahaochar va mazali kartoshka fri"
+        desc: "Qarsildoq va tillarang kartoshka bo‘laklari, tashqarisi mayin qovurilgan, ichi esa yumshoq va mazali — maxsus ziravorlar bilan ta’m berilgan, har qanday burgerga ajoyib hamroh bo‘ladigan ishtahaochar va mazali kartoshka fri"
     },
 
     {
-        id:4,
+        id: 5,
         name: "hot-dog",
         category: "hotdogs",
         price: 15000,
         image: "https://images.unsplash.com/photo-1599599810694-b5b37304c041?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        desc:"Yumshoq va mayin bulochka, shirador va mazali kolbasa, yangi sabzavotlar, eritilgan pishloq hamda maxsus FastBite souslari uyg‘unligidan tayyorlangan — har bir luqmasida o‘ziga xos ta’m va ishtaha baxsh etadigan mazali va to‘yimli hot-dog."
+        desc: "Yumshoq va mayin bulochka, shirador va mazali kolbasa, yangi sabzavotlar, eritilgan pishloq hamda maxsus FastBite souslari uyg‘unligidan tayyorlangan — har bir luqmasida o‘ziga xos ta’m va ishtaha baxsh etadigan mazali va to‘yimli hot-dog."
     },
 
     {
-        id:5,
+        id: 6,
         name: "ichimliklar",
         category: "drinks",
         price: 8000,
         image: "https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        desc:"Muzdek va tetiklashtiruvchi ichimlik, yoqimli ta’m va mayin gazlanganligi bilan har bir qultumda o‘zgacha zavq bag‘ishlaydi — burger, hot-dog va kartoshka fri bilan ajoyib uyg‘unlashadigan mazali va chanqoqbosar ichimlik."
+        desc: "Muzdek va tetiklashtiruvchi ichimlik, yoqimli ta’m va mayin gazlanganligi bilan har bir qultumda o‘zgacha zavq bag‘ishlaydi — burger, hot-dog va kartoshka fri bilan ajoyib uyg‘unlashadigan mazali va chanqoqbosar ichimlik."
     },
 
     {
-        id:6,
+        id: 7,
         name: "ichimliklar",
         category: "drinks",
         price: 10000,
         image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        desc:"Yoqimli ta’m, mayin gaz va muzdek harorat uyg‘unligidan yaratilgan tetiklashtiruvchi ichimlik. Har bir qultumda chanqoqni bosib, FastBite taomlari bilan birga yanada mazali lahzalarni taqdim etadi."
+        desc: "Yoqimli ta’m, mayin gaz va muzdek harorat uyg‘unligidan yaratilgan tetiklashtiruvchi ichimlik. Har bir qultumda chanqoqni bosib, FastBite taomlari bilan birga yanada mazali lahzalarni taqdim etadi."
     },
 
     {
-        id:7,
+        id: 8,
         name: "qazili hot-dog",
-        category: "drinks",
+        category: "hotdogs",
         price: 18000,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzcCRGmd6Xqwm3Qu1ZXShNZ6O6LkvBTqhUkRBvIWlyjQ&s=10",
-        desc:"Yoqimli ta’m, mayin gaz va muzdek harorat uyg‘unligidan yaratilgan tetiklashtiruvchi ichimlik. Har bir qultumda chanqoqni bosib, FastBite taomlari bilan birga yanada mazali lahzalarni taqdim etadi."
+        desc: "Qazili hot-dog — mazali va to‘yimli fast-food turi. Yumshoq bulochka ichiga qazi, souslar va yangi sabzavotlar qo‘shiladi. O‘ziga xos ta’mi va xushbo‘y hidi bilan ajralib turadi."
     },
 
 
+    {
+        id: 9,
+        name: "Lavash",
+        category: "pitas",
+        price: 30000,
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAzb9lk-kkS9NjPKPqUw-U6h6_kMxmAwpxkgXN4IneG4lIwTxflq7x5-1q&s=10",
+        desc: "Lavash — mazali va to‘yimli fast-food turi. Yupqa non ichiga go‘sht, kartoshka fri, yangi sabzavotlar va turli souslar solinadi. O‘zining ajoyib ta’mi va yumshoqligi bilan ko‘pchilikka yoqadi."
+    },
 
-    
-    
+    {
+        id: 10,
+        name: "tovuqli Lavash",
+        category: "pitas",
+        price: 36000,
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCBIyL6aj9WbjEpGS22eXUly-oMASPmfDp_tjCW7xaAFpDX7DX9eyIm4Up&s=10",
+        desc: "Tovuqli lavash — mazali va to‘yimli fast-food turi. Yumshoq lavash ichiga shirali tovuq go‘shti, yangi sabzavotlar, kartoshka fri va mazali souslar solinadi. Yoqimli ta’mi bilan barchaga manzur bo‘ladi! 🌯😋"
+    },
+
+    {
+        id: 11,
+        name: "tovuqli kfc",
+        category: "sides",
+        price: 35000,
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRSEwtQLeg3XMsEt30GYGktKYdIKeMW06KwoSAZ5fZmQ&s=10",
+        desc: "Tovuqli KFC — tashqi tomoni qarsildoq, ichi esa yumshoq va shirali tovuq go‘shtidan tayyorlanadigan mazali fast-food. Maxsus ziravorlar bilan tayyorlanib, fri va turli souslar bilan tortiladi. 🍗😋"
+    },
+
+     {
+        id: 12,
+        name: "baliqli kfc",
+        category: "sides",
+        price: 35000,
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJPn0wHpcXEdV-SCfdN6TT_YMjYgGrxq4VZR6LXS7weEk40mqxeX3QILE&s=10",
+        desc: "Baliqli KFC — tashqi tomoni qarsildoq, ichi esa yumshoq va mazali baliq go‘shtidan tayyorlanadigan fast-food. Turli ziravorlar bilan tayyorlanib, fri va souslar bilan tortiladi. 🐟😋"
+    },
+
+   
 ]
 
 let cart = [];
@@ -80,11 +123,11 @@ const totalPriceEl = document.getElementById('totalPrice');
 const clearCartBtn = document.getElementById('clearCartBtn');
 const checkoutBtn = document.getElementById('checkoutBtn');
 
-function renderMenu(category = 'all'){
+function renderMenu(category = 'all') {
     menuGrid.innerHTML = '';;
     const filtered = category === 'all'
-    ? menuData
-    : menuData.filter(item => item.category === category);
+        ? menuData
+        : menuData.filter(item => item.category === category);
 
     filtered.forEach(product => {
         const card = document.createElement('div');
@@ -102,22 +145,22 @@ function renderMenu(category = 'all'){
     </div>
 </div>
 `;
-menuGrid.appendChild(card);
+        menuGrid.appendChild(card);
     })
 
 }
 
-function addToCart(productId, btnElement){
+function addToCart(productId, btnElement) {
     const existing = cart.find(item => item.id === productId);
-    if (existing){
+    if (existing) {
         existing.quantity++;
     }
-    else{
+    else {
         const product = menuData.find(item => item.id === productId)
-        cart.push({ ...product, quantity: 1});
+        cart.push({ ...product, quantity: 1 });
     }
-   
-    if (btnElement){
+
+    if (btnElement) {
         const originalText = btnElement.textContent;
         btnElement.textContent = "Qo'shildi! ✓";
         btnElement.classList.add('added');
@@ -130,21 +173,21 @@ function addToCart(productId, btnElement){
     updateCartUI();
 }
 
-function changeQuantity(productId, delta){
+function changeQuantity(productId, delta) {
     const item = cart.find(item => item.id === productId);
-    if (item){
+    if (item) {
         item.quantity += delta;
-        if (item.quantity <= 0){
+        if (item.quantity <= 0) {
             cart = cart.filter(i => i.id !== productId);
         }
     }
     updateCartUI();
 }
 
-function updateCartUI(){
+function updateCartUI() {
     const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
     cartCountEl.textContent = totalCount;
-    
+
     const totalSum = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     totalPriceEl.textContent = totalSum.toLocaleString();
 
@@ -172,9 +215,9 @@ function updateCartUI(){
         cartToggle.classList.remove('bump');
     }, 400);
 }
-         
-filterContainer.addEventListener('click', (e) =>{
-    if (e.target.classList.contains('filter-btn')){
+
+filterContainer.addEventListener('click', (e) => {
+    if (e.target.classList.contains('filter-btn')) {
         document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
         e.target.classList.add('active');
         renderMenu(e.target.dataset.category);
@@ -184,7 +227,7 @@ filterContainer.addEventListener('click', (e) =>{
 cartToggle.addEventListener('click', () => cartModal.classList.add('open'));
 closeCart.addEventListener('click', () => cartModal.classList.remove('open'));
 
-renderMenu(); 
+renderMenu();
 
 if (clearCartBtn) {
     clearCartBtn.addEventListener('click', () => {
@@ -203,22 +246,22 @@ checkoutBtn.addEventListener('click', () => {
     if (cart.length === 0) {
         alert("Savat bo'sh!");
         return;
-  }
-    
+    }
+
 
     let message = "🍔 *FastBite yangi zakaz!*\n\n";
 
-cart.forEach((item, index) => {
-    message += `${index + 1}. ${item.name} - ${item.quantity} ta. (${(item.price * item.quantity).toLocaleString()} so'm)\n`;
-});
+    cart.forEach((item, index) => {
+        message += `${index + 1}. ${item.name} - ${item.quantity} ta. (${(item.price * item.quantity).toLocaleString()} so'm)\n`;
+    });
 
-const totalSum = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-message += `\n💰 *Jami:* ${totalSum.toLocaleString()} so'm`;
+    const totalSum = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    message += `\n💰 *Jami:* ${totalSum.toLocaleString()} so'm`;
 
-const telegramUsername = "Bilol_2427";
+    const telegramUsername = "Bilol_2427";
 
-const encodedMessage = encodeURIComponent(message);
-const telegramUrl = `https://t.me/${telegramUsername}?text=${encodedMessage}`;
+    const encodedMessage = encodeURIComponent(message);
+    const telegramUrl = `https://t.me/${telegramUsername}?text=${encodedMessage}`;
 
-window.open(telegramUrl, '_blank');
+    window.open(telegramUrl, '_blank');
 });
